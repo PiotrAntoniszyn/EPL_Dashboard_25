@@ -59,7 +59,7 @@ with st.sidebar.expander("Players",expanded=True):
   player1 = st.selectbox("Player 1:",options=list(playerdb[playerdb['Team']==selected_club]['Player'].sort_values(ascending=True)),index=0)
   player2 = st.selectbox("Player 2:",options=list(playerdb[playerdb['Team']==selected_club]['Player'].sort_values(ascending=True)),index=1)
 
-image = Image.open('PL_Logos\{}.png'.format(selected_club))
+image = Image.open('PL_Logos/{}.png'.format(selected_club))
 
 
 
